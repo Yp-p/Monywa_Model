@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".KingFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/topLay"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="80dp"
+        android:background="#02A309"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="26th MONYWA MODEL UNIVERSE"
+        android:textColor="#C0CA33"
+        android:textSize="30dp"/>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        app:layout_constraintTop_toBottomOf="@id/topLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/kingRecycler"/>
+        <Button
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/btnKing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To Queen Page"
+            android:background="#03C50B"
+            android:textColor="@android:color/white"
+            android:paddingHorizontal="10dp"
+            android:layout_margin="20dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
